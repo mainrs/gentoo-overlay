@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DESCRIPTION=A beginner-friendly music making app
+EAPI=8
+HOMEPAGE=https://github.com/YuriSizov/boscaceoil-blue
+INHERIT=desktop
+KEYWORDS=~amd64
+LICENSE=BSD-2 MIT
+RESTRICT=bindist mirror
+SLOT=0
+SRC_URI=https://github.com/YuriSizov/boscaceoil-blue/releases/download/3.0-stable/boscaceoil-blue-linux-x86_64.zip
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed
+_md5_=e24ff48aab562199626b13987b799ff6

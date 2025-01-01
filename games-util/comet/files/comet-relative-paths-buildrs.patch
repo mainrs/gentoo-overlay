@@ -1,0 +1,27 @@
+diff --git a/build.rs b/build.rs
+index 0fa99c3..f1a1fe4 100644
+--- a/build.rs
++++ b/build.rs
+@@ -13,14 +13,14 @@ fn main() {
+         .protoc()
+         .protoc_path(protoc_path.as_path())
+         .includes(["proto"])
+-        .input("proto/gog.protocols.pb.proto")
+-        .input("proto/galaxy.protocols.webbroker_service.proto")
+-        .input("proto/galaxy.protocols.overlay_for_peer.proto")
+-        .input("proto/galaxy.protocols.communication_service.proto")
+-        .input("proto/galaxy.common.protocols.peer_to_server.proto")
+-        .input("proto/galaxy.common.protocols.peer_to_peer.proto")
+-        .input("proto/galaxy.common.protocols.peer_common.proto")
+-        .input("proto/galaxy.common.protocols.connection.proto")
++        .input("gog.protocols.pb.proto")
++        .input("galaxy.protocols.webbroker_service.proto")
++        .input("galaxy.protocols.overlay_for_peer.proto")
++        .input("galaxy.protocols.communication_service.proto")
++        .input("galaxy.common.protocols.peer_to_server.proto")
++        .input("galaxy.common.protocols.peer_to_peer.proto")
++        .input("galaxy.common.protocols.peer_common.proto")
++        .input("galaxy.common.protocols.connection.proto")
+         .cargo_out_dir("proto")
+         .run_from_script();
+ }
